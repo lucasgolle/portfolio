@@ -1,10 +1,13 @@
 import { Container, Back, TitulosHabilidades, HabilidadesBack, HabilidadesFront } from "./styles";
 import SpinnerIcon from "@rsuite/icons/legacy/Spinner";
+import JS from "../../assets/jsicon.png"
+import RC from "../../assets/reacticon.png"
+import CSS from "../../assets/cssicon.png"
+import TYPE from "../../assets/typeicon.png"
 
 export const Main = () => {
   return (
     <>
-    {/* <GlobalContainer> */}
       <Container>
         <TitulosHabilidades>
           <h3>Front-End</h3>
@@ -31,27 +34,25 @@ export const Main = () => {
         <HabilidadesFront>
         <div>
             <h3>React</h3>
-          <SpinnerIcon pulse style={{ fontSize: "1em" }} />
+            <img src={RC} alt="ícone javascript" style={{width: "25px"}}/>
           </div>
           <div>
             <h3>JavaScript</h3>
-          <SpinnerIcon pulse style={{ fontSize: "1em" }} />
+          <img src={JS} alt="ícone javascript" style={{width: "30px"}}/>
           </div>
           <div>
             <h3>CSS</h3>
-          <SpinnerIcon pulse style={{ fontSize: "1em" }} />
+            <img src={CSS} alt="ícone javascript" style={{width: "30px"}}/>
           </div>
           <div>
-            <h3>GIT</h3>
-          <SpinnerIcon pulse style={{ fontSize: "1em" }} />
+            <h3>Context API</h3>
           </div>
           <div>
             <h3>TypeScript</h3>
-          <SpinnerIcon pulse style={{ fontSize: "1em" }} />
+            <img src={TYPE} alt="ícone javascript" style={{width: "25px"}}/>
           </div>
         </HabilidadesFront>
         </Container>
-      {/* </GlobalContainer> */}
     </>
   );
 };
