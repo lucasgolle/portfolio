@@ -3,6 +3,7 @@ import GlobalStyle from "./styles/global"
 import {Header} from "./components/Header"
 import {Main} from "./components/Main"
 import { Welcome } from "./components/Wellcome";
+import { Projects } from "./components/Projects"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Header/>
     <Welcome/>
     <Main/>
+    <Projects/>
     </>
   );
 }
