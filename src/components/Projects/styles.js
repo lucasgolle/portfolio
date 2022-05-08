@@ -29,10 +29,9 @@ export const Container = styled.div`
     cursor: pointer;
 
     &:hover {
-	box-shadow: 0.5px 0.5px 15px black;
-    width: 110%;
-    transition: width 2s;
-    height: 110%;
+	  box-shadow: 0.5px 0.5px 15px black;
+    width: 105%;
+    transition: width 1s;
 }
   }
 

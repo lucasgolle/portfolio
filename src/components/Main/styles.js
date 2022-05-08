@@ -1,5 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
+const animateYang = keyframes`
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+`;
 export const Container = styled.div`
   width: 600px;
   height: 600px;
@@ -19,8 +29,11 @@ export const Container = styled.div`
       transparent 100%
     ),
     linear-gradient(to right, white 50%, black 50%);
+    animation: ${animateYang} 1s;
+
 
 `;
+
 
 export const TitulosHabilidades = styled.div`
   display: flex;
