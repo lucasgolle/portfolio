@@ -4,17 +4,15 @@ export const Container = styled.header`
   display: flex;
   font-size: 1rem;
   font-weight: 500;
-  color: #E8E4B8;
+  color: #e8e4b8;
   letter-spacing: 2px;
-  background-color: #1C1C1C;
+  background-color: #1c1c1c;
   padding: 1rem;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 
- 
-
-  h1{
+  h1 {
     margin-left: 10px;
     font-weight: bold;
     color: #ffff;
@@ -27,20 +25,18 @@ export const Container = styled.header`
     cursor: pointer;
   }
 
-    div{
+  div {
     display: flex;
+  }
+
+  li {
+    margin-right: 3rem;
+    cursor: pointer;
+
+    &:hover {
+      color: #ffff;
+      border-bottom: 1px solid #e8e4b8;
+  
     }
-
-    li{
-        margin-right: 3rem;
-        cursor: pointer;
-        border-bottom: none;
-       
-
-        &:hover{
-            color: #ffff;
-            border-bottom: 1px solid #ffff;
-        }
-    }
-
+  }
 `;
