@@ -12,7 +12,7 @@ const animateYang = keyframes`
 `;
 export const Container = styled.div`
   width: 600px;
-  height: 600px;
+  height: 61vh;
   border-radius: 50%;
   margin: 5em auto;
   border: 1px solid #000;

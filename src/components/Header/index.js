@@ -2,6 +2,7 @@ import {Container} from "./styles"
 import Brazil from "../../assets/brazil-svgrepo-com.svg"
 import EUA from "../../assets/united-states-of-america-svgrepo-com.svg"
 import { useState } from "react"
+import { Link } from "react-scroll/modules"
 
 export const Header = () =>{
     const [language, setlLanguage] = useState(true);
@@ -14,10 +15,16 @@ export const Header = () =>{
         <nav>
             <ul>
                 <div>
-                <li>Front-end</li>
-                <li>Back-end</li>
+                <li>
+                    <Link to="front" spy={true} smooth={true} offset={-65} duration={500}>Front-end</Link> 
+                </li>
+                <li>
+                <Link to="back" spy={true} smooth={true} offset={50} duration={500}>Back-end</Link> 
+                </li>
                 {language &&
-                <li>Sobre mim</li>
+                <li>
+                    <Link to="sobremim" spy={true} smooth={true} offset={50} duration={500}>Sobre mim</Link> 
+                </li>
             } {!language }
                 </div>
                 
