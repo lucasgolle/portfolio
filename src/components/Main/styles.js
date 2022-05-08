@@ -85,6 +85,6 @@ export const HabilidadesFront = styled.div`
     flex-direction: row;
     height: 40px;
     width: 210px;
-    align-items: center;
+    align-items: flex-end
   }
 `

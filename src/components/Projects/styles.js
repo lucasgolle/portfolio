@@ -24,14 +24,14 @@ export const Container = styled.div`
 
   img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     border-radius: 4px;
     cursor: pointer;
 
     &:hover {
 	box-shadow: 0.5px 0.5px 15px black;
     width: 110%;
-    transition: width 1s;
+    transition: width 2s;
     height: 110%;
 }
   }
@@ -39,9 +39,9 @@ export const Container = styled.div`
   li {
     background-color: grey;
     width: 30vw;
-    height: 300px;
+    height: 250px;
     border-radius: 4px;
-    max-width: 460px;
+    max-width: 430px;
     margin-top: 4rem;
     margin-bottom: 4rem;
   }

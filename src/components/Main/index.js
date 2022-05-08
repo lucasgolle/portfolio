@@ -4,6 +4,7 @@ import JS from "../../assets/jsicon.png"
 import RC from "../../assets/reacticon.png"
 import CSS from "../../assets/cssicon.png"
 import TYPE from "../../assets/typeicon.png"
+import API from "../../assets/api.png"
 
 export const Main = () => {
   return (
@@ -46,6 +47,7 @@ export const Main = () => {
           </div>
           <div>
             <h3>Context API</h3>
+          <img src={API} alt="ícone javascript" style={{width: "30px"}}/>
           </div>
           <div>
             <h3>TypeScript</h3>
