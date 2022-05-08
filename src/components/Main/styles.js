@@ -17,6 +17,7 @@ export const Container = styled.div`
           height: 600px;
           position: relative;
           align-items: center;
+          color: #1C1C1C;
           justify-content: space-around;
         }
 
