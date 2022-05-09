@@ -12,8 +12,8 @@ const animateYang = keyframes`
 `;
 export const Container = styled.div`
 
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
     margin: 5em auto;
     border: 1px solid #000;
@@ -63,17 +63,30 @@ export const HabilidadesBack = styled.div`
     display: flex;
     flex-direction: column;
     height: 300px;
+    font-size: 0.6rem;
     position: relative;
-    align-items: center;
+    align-items: flex-start;
     color: #ffff;
-    margin-top: -50%;
-    margin-left: 50%;
-  
+    margin-top: -44%;
+    margin-left: 55%;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
   
   
   svg {
     color: #ffff;
+    margin-top: 5px;
   }
+
+  h3 {
+    margin-right: 10px;
+    color: #ffff;
+    margin-top: 5px;
+    }
 
   
   @media (min-width: 768px) {
@@ -81,6 +94,7 @@ export const HabilidadesBack = styled.div`
     flex-direction: column;
     height: 600px;
     position: relative;
+    font-size: 1rem;
     align-items: center;
     color: #1c1c1c;
     margin-top: -50%;
