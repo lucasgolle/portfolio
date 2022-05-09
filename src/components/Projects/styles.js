@@ -1,26 +1,62 @@
 import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
-      @media (min-width:768px){
         h1 {
           text-align: center;
+          font-size: 1.4rem;
+          margin-bottom: 30px;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin: 0 auto;
+          width: 80%;
+          margin-top: 6rem;
+        }
+
+        h3{
+          font-size: 1rem;
+          font-weight: 600;
+          letter-spacing: 2px;
+          text-align: center;
+        }
+
+        img {
+          width: 100%;
+          height: 180px;
+          border-radius: 4px;
+          cursor: pointer;
+          &:hover {
+          box-shadow: 0.5px 0.5px 15px black;
+          width: 105%;
+          transition: width 1s;
+      }
+
+    }
+
+    li {
+          margin-top: 1rem;
+          margin-bottom: 4rem;
+        }
+
+
+      @media (min-width:768px){
+        h1 {
           font-size: 2.4rem;
         }
       
         ul {
           display: flex;
+          flex-direction: row;
           column-count: 2;
-          justify-content: space-around;
-          margin: 0 auto;
           width: 70%;
-          margin-top: 6rem;
         }
       
         h3{
           font-size: 1.4rem;
-          font-weight: 600;
-          letter-spacing: 2px;
-      
+          text-align: start;
         }
       
         img {

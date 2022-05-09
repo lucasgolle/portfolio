@@ -114,25 +114,51 @@ export const HabilidadesBack = styled.div`
 `;
 
 export const HabilidadesFront = styled.div`
+
+display: flex;
+    flex-direction: column;
+    height: 300px;
+    font-size: 0.6rem;
+    position: relative;
+    align-items: flex-start;
+    color: black;
+    margin-top: -130%;
+    margin-left: 20%;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+  
+  svg {
+    color: #ffff;
+    margin-top: 5px;
+  }
+
   h3 {
     margin-right: 10px;
-    color: #1c1c1c;
-  }
+    color: black;
+    margin-top: 5px;
+    }
+
+
   @media (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
     height: 600px;
-    position: relative;
-    align-items: center;
-    color: #1c1c1c;
+    font-size: 1rem;
     margin-top: -130%;
-    margin-right: 40%;
+    margin-left: 10%;
     div {
       display: flex;
       flex-direction: row;
       height: 40px;
       width: 210px;
       align-items: flex-end;
+    }
+    h3 {
+      margin-right: 10px;
+      color: #1c1c1c;
     }
   }
 `;
