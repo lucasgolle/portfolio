@@ -3,6 +3,7 @@ import Brazil from "../../assets/brazil-svgrepo-com.svg"
 import EUA from "../../assets/united-states-of-america-svgrepo-com.svg"
 import { useState } from "react"
 import { Link } from "react-scroll/modules"
+import MENU from "../../assets/menu2.png"
 
 export const Header = () =>{
     const [language, setlLanguage] = useState(true);
@@ -12,6 +13,7 @@ export const Header = () =>{
         <>
         <Container>
         <h1>&lt; Lucas Golle Profile /&gt;</h1>
+        <img src={MENU} alt="" style={{width: "15px", marginRight: "-25%"}}/>
         <nav>
             <ul>
                 <div>
