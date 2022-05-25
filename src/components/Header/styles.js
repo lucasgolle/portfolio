@@ -8,22 +8,16 @@ export const Container = styled.header`
   letter-spacing: 2px;
   background-color: #1c1c1c;
   padding: 1rem;
-  width: 100vw;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 
   h1 {
     margin-left: 10px;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #ffff;
     display: block;
-  }
-
-  img {
-    width: 30px;
-    margin-right: 10px;
-    cursor: pointer;
   }
 
   div {
@@ -37,10 +31,7 @@ export const Container = styled.header`
 
     img {
       width: 40px;
-    }
-
-    svg{
-      display: none;
+      margin-right: 1rem;
     }
 
     div {
@@ -58,4 +49,17 @@ export const Container = styled.header`
     }
   }
 `;
+
+export const MenuBar = styled.img`
+    display: flex;
+    width: 20px;
+    position: absolute;
+    right: 5%;
+    color: white;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+`
 

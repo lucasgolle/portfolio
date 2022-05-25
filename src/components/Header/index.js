@@ -1,4 +1,4 @@
-import {Container} from "./styles"
+import {Container, MenuBar} from "./styles"
 import Brazil from "../../assets/brazil-svgrepo-com.svg"
 import EUA from "../../assets/united-states-of-america-svgrepo-com.svg"
 import { useState } from "react"
@@ -13,7 +13,7 @@ export const Header = () =>{
         <>
         <Container>
         <h1>&lt; Lucas Golle Profile /&gt;</h1>
-        <img src={MENU} alt="" style={{width: "15px", marginRight: "-25%"}}/>
+        <MenuBar src={MENU} alt=""/>
         <nav>
             <ul>
                 <div>
