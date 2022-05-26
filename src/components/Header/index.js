@@ -17,7 +17,7 @@ export const Header = () => {
     <>
       <Container>
         <h1>&lt; Lucas Golle Profile /&gt;</h1>
-        {showModal ? (<MenuBar onClick={changeState} src={MENU} alt="" />) : (<span onClick={changeState}>X</span>)}
+        {!showModal ? (<MenuBar onClick={changeState} src={MENU} alt="" />) : (<span onClick={changeState}>X</span>)}
         <nav>
           <ul>
             <div>
