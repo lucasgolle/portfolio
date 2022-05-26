@@ -41,4 +41,37 @@ export const Container = styled.div`
     font-size: 1.2rem;
     margin-top: 1rem;
   }
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: 1024px) {
+
+    width: 60vw;
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    img {
+      width: 220px;
+      height: 220px;
+      margin-right: 2rem;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+    font-size: 20px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
 `;

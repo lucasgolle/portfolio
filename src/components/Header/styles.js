@@ -11,6 +11,9 @@ export const Container = styled.header`
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 20;
+  top: 0%;
 
   h1 {
     margin-left: 10px;

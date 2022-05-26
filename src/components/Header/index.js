@@ -18,10 +18,10 @@ export const Header = () =>{
             <ul>
                 <div>
                 <li>
-                    <Link to="front" spy={true} smooth={true} offset={-65} duration={500}>Front-end</Link> 
+                    <Link to="front" spy={true} smooth={true} offset={-85} duration={500}>Front-end</Link> 
                 </li>
                 <li>
-                <Link to="back" spy={true} smooth={true} offset={-65} duration={500}>Back-end</Link> 
+                <Link to="back" spy={true} smooth={true} offset={-85} duration={500}>Back-end</Link> 
                 </li>
                 {language &&
                 <li>
