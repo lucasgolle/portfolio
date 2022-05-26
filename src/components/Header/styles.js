@@ -11,32 +11,87 @@ export const Container = styled.header`
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 20;
+  top: 0%;
 
   h1 {
     margin-left: 10px;
+    font-size: 1rem;
     font-weight: bold;
     color: #ffff;
+    display: block;
   }
 
-  img {
-    size: 50px;
-    width: 40px;
-    margin-right: 10px;
-    cursor: pointer;
+  div {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    background-color: #1c1c1c;
+    justify-content: space-between;
+
+    img {
+      width: 40px;
+      margin-right: 1rem;
+    }
+
+    div {
+      display: flex;
+    }
+
+    li {
+      margin-right: 3rem;
+      cursor: pointer;
+
+      &:hover {
+        color: #ffff;
+        border-bottom: 1px solid #e8e4b8;
+      }
+    }
+  }
+`;
+
+export const MenuBar = styled.img`
+  display: flex;
+  width: 20px;
+  position: absolute;
+  right: 5%;
+  color: white;
+  cursor: pointer;
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const ModalHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 200px;
+  margin-top: -17px;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 20;
+  font-size: 1rem;
+  background-color: #e8e4b8;
+
+
+  li {
+    padding: 0.8rem;
   }
 
   div {
     display: flex;
+    justify-content: center;
+    padding: 0.8rem;
   }
 
-  li {
-    margin-right: 3rem;
-    cursor: pointer;
-
-    &:hover {
-      color: #ffff;
-      border-bottom: 1px solid #e8e4b8;
-  
-    }
+  img {
+    width: 35px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 `;

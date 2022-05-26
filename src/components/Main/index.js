@@ -4,6 +4,7 @@ import JS from "../../assets/jsicon.png"
 import RC from "../../assets/reacticon.png"
 import CSS from "../../assets/cssicon.png"
 import TYPE from "../../assets/typeicon.png"
+import API from "../../assets/api.png"
 
 export const Main = () => {
   return (
@@ -34,22 +35,23 @@ export const Main = () => {
         <HabilidadesFront>
         <div>
             <h3>React</h3>
-            <img src={RC} alt="ícone javascript" style={{width: "25px"}}/>
+            <img src={RC} alt="ícone javascript" style={{width: "20px"}}/>
           </div>
           <div>
             <h3>JavaScript</h3>
-          <img src={JS} alt="ícone javascript" style={{width: "30px"}}/>
+          <img src={JS} alt="ícone javascript" style={{width: "23px"}}/>
           </div>
           <div>
             <h3>CSS</h3>
-            <img src={CSS} alt="ícone javascript" style={{width: "30px"}}/>
+            <img src={CSS} alt="ícone javascript" style={{width: "20px"}}/>
           </div>
           <div>
             <h3>Context API</h3>
+          <img src={API} alt="ícone javascript" style={{width: "20px"}}/>
           </div>
           <div>
             <h3>TypeScript</h3>
-            <img src={TYPE} alt="ícone javascript" style={{width: "25px"}}/>
+            <img src={TYPE} alt="ícone javascript" style={{width: "20px"}}/>
           </div>
         </HabilidadesFront>
         </Container>

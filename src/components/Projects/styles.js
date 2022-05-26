@@ -3,47 +3,82 @@ import styled, { keyframes } from "styled-components";
 export const Container = styled.div`
   h1 {
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
   }
 
   ul {
     display: flex;
-    column-count: 2;
+    flex-direction: column;
     justify-content: space-around;
     margin: 0 auto;
-    width: 70%;
+    justify-content: center;
+    width: 100%;
     margin-top: 6rem;
   }
 
-  h3{
-    font-size: 1.4rem;
+  h3 {
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 2px;
-
+    text-align: center;
   }
 
   img {
-    width: 100%;
-    height: 300px;
-    border-radius: 4px;
+    max-width: 360px;
+    width: 90vw;
+    height: 220px;
+    border-radius: 8px;
+    box-shadow: 0.5px 0.5px 15px #111111;
     cursor: pointer;
-
+    border: 1px solid black;
     &:hover {
-	box-shadow: 0.5px 0.5px 15px black;
-    width: 110%;
-    transition: width 1s;
-    height: 110%;
-}
+      width: 95vw;
+      max-width: 375px;
+      transition: 1s;
+      box-shadow: 14px 14px 20px #111111;
+    }
   }
 
   li {
-    background-color: grey;
-    width: 30vw;
-    height: 300px;
-    border-radius: 4px;
-    max-width: 460px;
-    margin-top: 4rem;
+    margin: 0 auto;
+    margin-top: 1rem;
     margin-bottom: 4rem;
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      column-count: 2;
+      width: 100vw;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      text-align: start;
+    }
+
+    img {
+    max-width: 360px;
+    height: 230px;
+    border-radius: 8px;
+    box-shadow: 0.5px 0.5px 15px #111111;
+    cursor: pointer;
+    border: 1px solid black;
+    &:hover {
+      max-width: 375px;
+      transition: 1s;
+      box-shadow: 14px 14px 20px #111111;
+    }
+  }
+  li {
+    margin-bottom: 10rem;
+  }
   }
 `;
 
@@ -77,6 +112,9 @@ export const AnimationContainer = styled.div`
   display: flex;
   flex-direction: column;
   animation: ${appearFromLeft} 1s;
+  @media (min-width: 1024px){
+    margin-right: 100px;
+  }
 `;
 
 export const AnimationContainerRight = styled.div`
