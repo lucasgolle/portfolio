@@ -3,7 +3,7 @@ import profilePicture from "../../assets/pictureProfile.jpeg";
 
 export const About = () => {
   return (
-    <Container>
+    <Container id="sobremim">
       <h1>Um pouco sobre mim</h1>
       <div>
         <img src={profilePicture} alt="imagemPerfil" />

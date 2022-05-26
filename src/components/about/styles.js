@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin: 0 auto;
   width: 90vw;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 
   h1 {
     text-align: center;

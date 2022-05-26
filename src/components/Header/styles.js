@@ -54,15 +54,44 @@ export const Container = styled.header`
 `;
 
 export const MenuBar = styled.img`
+  display: flex;
+  width: 20px;
+  position: absolute;
+  right: 5%;
+  color: white;
+  cursor: pointer;
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const ModalHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 200px;
+  margin-top: -17px;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 20;
+  font-size: 1rem;
+  background-color: #e8e4b8;
+
+
+  li {
+    padding: 0.8rem;
+  }
+
+  div {
     display: flex;
-    width: 20px;
-    position: absolute;
-    right: 5%;
-    color: white;
-    cursor: pointer;
-    @media (min-width: 768px) {
-      display: none;
-    }
+    justify-content: center;
+    padding: 0.8rem;
+  }
 
-`
-
+  img {
+    width: 35px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+`;

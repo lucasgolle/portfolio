@@ -8,7 +8,7 @@ export const Container = styled.div`
     font-weight: 700;
     margin-top: 4rem;
     letter-spacing: 2px;
-    padding-top: 100px;
+    padding-top: 50px;
  
  @media (min-width: 768px) {
     font-size: 2.4rem;
