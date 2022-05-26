@@ -27,12 +27,13 @@ export const Container = styled.div`
   img {
     max-width: 360px;
     width: 90vw;
-    height: 230px;
+    height: 220px;
     border-radius: 8px;
     box-shadow: 0.5px 0.5px 15px #111111;
     cursor: pointer;
     border: 1px solid black;
     &:hover {
+      width: 95vw;
       max-width: 375px;
       transition: 1s;
       box-shadow: 14px 14px 20px #111111;
@@ -45,7 +46,7 @@ export const Container = styled.div`
     margin-bottom: 4rem;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     h1 {
       font-size: 2.4rem;
     }
@@ -111,7 +112,7 @@ export const AnimationContainer = styled.div`
   display: flex;
   flex-direction: column;
   animation: ${appearFromLeft} 1s;
-  @media (min-width: 768px){
+  @media (min-width: 1024px){
     margin-right: 100px;
   }
 `;

@@ -7,11 +7,13 @@ import doIt from "../../assets/YouCut_20220508_052856504_AdobeCreativeCloudExpre
 import nuKenzie from "../../assets/gifnukenzie.gif";
 import kenzieHub from "../../assets/gifkenziehub.gif";
 import hamburgueria from "../../assets/hamburgueria.gif";
+import backProject from "../../assets/image.jpeg"
 
 export const Projects = () => {
   return (
+    <>
     <Container id="front">
-      <h1>Meus projetos</h1>
+      <h1>Meus projetos front-end</h1>
       <ul>
         <AnimationContainer>
           <h3>Do It</h3>
@@ -35,5 +37,27 @@ export const Projects = () => {
         </AnimationContainerRight>
       </ul>
     </Container>
+    <Container id="back">
+      <h1>Meus projetos back-end</h1>
+      <ul>
+        <AnimationContainer>
+          <li>
+            <img src={backProject} alt="projeto doIt" />
+          </li>
+          <li>
+            <img src={backProject} alt="projeto doIt" />
+          </li>
+        </AnimationContainer>
+        <AnimationContainerRight>
+          <li>
+            <img src={backProject} alt="projeto nuKenzie" />
+          </li>
+          <li>
+            <img src={backProject} alt="projeto doIt" />
+          </li>
+        </AnimationContainerRight>
+      </ul>
+    </Container>
+    </>
   );
 };
