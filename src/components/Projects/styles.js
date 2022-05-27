@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 
 export const Container = styled(motion.div)`
 
-  
-
   h1 {
     text-align: center;
     font-size: 1.4rem;

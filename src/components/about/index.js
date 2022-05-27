@@ -28,12 +28,33 @@ export const About = () => {
     }
   }, [inView]);
 
+  const [inViewRef1, inView1] = useInView({
+    threshold: 0.2,
+  })
+
+  const animation1 = useAnimation();
+
+  useEffect(() => {
+    if (inView1) {
+      animation1.start({
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 3,
+        },
+      });
+    }
+    if (!inView1) {
+      animation1.start({ opacity: 0 });
+    }
+  }, [inView1]);
+
   return (
-    <Container id="sobremim">
-      <h1>Um pouco sobre mim</h1>
+    <Container ref={inViewRef1} id="sobremim">
+      <motion.h1 animate={animation1}>Um pouco sobre mim</motion.h1>
       <div>
-        <img src={profilePicture} alt="imagemPerfil" />
-        <p>
+        <motion.img animate={animation1} src={profilePicture} alt="imagemPerfil" />
+        <motion.p animate={animation1}>
           Olá, me chamo Lucas Golle. Sou estudante de Ciência da Computação e
           desenvolvimento web. Esse é meu portfolio, no qual pretendo atualizar
           e melhorar durante toda a minha carreira. Minha paixão pela
@@ -41,15 +62,15 @@ export const About = () => {
           técnicas de empresas de comunicação (televisão e rádio) operando
           softwares. Minha meta agora além de operar e entender, é estar do
           outro lado, desenvolvendo essas ferramentas fantásticas.
-        </p>
+        </motion.p>
       </div>
       <section>
-        <h2>Perfil</h2>
-        <p>Apaixonado por tecnologia, games e Harry Potter.</p>
+        <motion.h2 animate={animation1}>Perfil</motion.h2>
+        <motion.p animate={animation1}>Apaixonado por tecnologia, games e Harry Potter.</motion.p>
       </section>
       <section>
-        <h2>Casa de Hogwarts</h2>
-        <p ref={inViewRef}>Lufa-Lufa</p>
+        <motion.h2 animate={animation1}>Casa de Hogwarts</motion.h2>
+        <motion.p ref={inViewRef} animate={animation1}>Lufa-Lufa</motion.p>
         <motion.img src={Hufflepuff} alt="imagem lufalufa" animate={animation}/>
       </section>
     </Container>

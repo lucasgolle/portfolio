@@ -49,7 +49,7 @@ export const Projects = () => {
         transition: {
           type: "spring",
           duration: 1.5,
-          bounce: 0.3,
+          bounce: 0.2,
         },
       });
     }
