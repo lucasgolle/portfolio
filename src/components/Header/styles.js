@@ -8,7 +8,8 @@ export const Container = styled.header`
   letter-spacing: 2px;
   background-color: #1c1c1c;
   padding: 1rem;
-  width: 100%;
+  width: 100vw;
+  max-width: 100vw;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -46,7 +47,15 @@ export const Container = styled.header`
 
     img {
       width: 40px;
+      cursor: pointer;
+      transition: 0.5s;
       margin-right: 1rem;
+
+      &:hover {
+        transition: 0.5s;
+        box-shadow: 0.5px 0.5px 15px white;
+        border-radius: 100%;
+      }
     }
 
     div {
@@ -129,5 +138,15 @@ export const ModalHeader = styled.div`
     margin-right: 10px;
     animation: 1s animationElement;
     margin-left: 10px;
+
+    &:hover {
+        transition: 0.5s;
+        box-shadow: 0.5px 0.5px 15px white;
+        border-radius: 100%;
+      }
+  }
+
+  @media (min-width: 768px) {
+    display: none;
   }
 `;

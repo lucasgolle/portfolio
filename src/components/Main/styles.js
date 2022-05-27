@@ -15,6 +15,7 @@ export const Container = styled.div`
     width: 320px;
     height: 320px;
     border-radius: 50%;
+    max-width: 100vw;
     margin: 5em auto;
     border: 1px solid #000;
     background: radial-gradient(circle at 50% 25%, black 5%, transparent 5%),

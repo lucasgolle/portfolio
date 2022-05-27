@@ -6,7 +6,6 @@ import { Link } from "react-scroll/modules";
 import MENU from "../../assets/menu(1).svg";
 
 export const Header = () => {
-  const [language, setlLanguage] = useState(true);
   const [showModal, setShowModal] = useState(false);
 
   const changeState = () => {

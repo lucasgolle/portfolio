@@ -9,6 +9,7 @@ export const Container = styled.div`
     margin-top: 4rem;
     letter-spacing: 2px;
     padding-top: 50px;
+    max-width: 100vw;
  
  @media (min-width: 768px) {
     font-size: 2.4rem;
