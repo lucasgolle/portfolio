@@ -38,6 +38,7 @@ export const Container = styled.div`
   @media (min-width: 768px) {
     width: 600px;
     height: 600px;
+    margin-bottom: 10rem;
   }
 `;
 

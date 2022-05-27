@@ -4,7 +4,9 @@ import {
   AnimationContainerRight,
   ContainerBack,
 } from "./styles";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 import doIt from "../../assets/YouCut_20220508_052856504_AdobeCreativeCloudExpress.gif";
 import nuKenzie from "../../assets/gifnukenzie.gif";
 import kenzieHub from "../../assets/gifkenziehub.gif";
@@ -12,14 +14,54 @@ import hamburgueria from "../../assets/hamburgueria.gif";
 import backProject from "../../assets/image.jpeg";
 
 export const Projects = () => {
+
+  const [inViewRef, inView] = useInView({
+    threshold: 0.2,
+  })
+  const [inViewRef2, inView2] = useInView({
+    threshold: 0.2,
+  })
+
+  const animation = useAnimation();
+
+  const animation2 = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation2.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 1.5,
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation2.start({ x: "-100vw" });
+    }
+  }, [inView]);
+
+  useEffect(() => {
+    if (inView2) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 1.5,
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView2) {
+      animation.start({ x: "1000vw" });
+    }
+  }, [inView2]);
+
   return (
     <>
-      <Container id="front">
-        <motion.div
-        initial={{x: "-100vw"}}
-        animate={{x: 0}}
-        transition={{type: "spring", duration: 1.5, bounce: 0.3}}
-        >
+      <Container ref={inViewRef} id="front">
+        <motion.div animate={animation2}>
           <h1>Meus projetos front-end</h1>
           <ul>
             <AnimationContainer>
@@ -45,24 +87,24 @@ export const Projects = () => {
           </ul>
         </motion.div>
       </Container>
-      <ContainerBack id="back">
+      <ContainerBack ref={inViewRef2} id="back">
         <h1>Meus projetos back-end</h1>
         <ul>
           <AnimationContainer>
-            <li>
+            <motion.li animate={animation}>
               <img src={backProject} alt="projeto doIt" />
-            </li>
-            <li>
+            </motion.li>
+            <motion.li animate={animation}>
               <img src={backProject} alt="projeto doIt" />
-            </li>
+            </motion.li>
           </AnimationContainer>
           <AnimationContainerRight>
-            <li>
+            <motion.li animate={animation}>
               <img src={backProject} alt="projeto nuKenzie" />
-            </li>
-            <li>
+            </motion.li>
+            <motion.li animate={animation}>
               <img src={backProject} alt="projeto doIt" />
-            </li>
+            </motion.li>
           </AnimationContainerRight>
         </ul>
       </ContainerBack>
