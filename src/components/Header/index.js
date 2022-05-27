@@ -76,6 +76,7 @@ export const Header = () => {
                 smooth={true}
                 offset={-85}
                 duration={500}
+                onClick={changeState}
               >
                 Front-end
               </Link>
@@ -86,8 +87,9 @@ export const Header = () => {
                 to="back"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-45}
                 duration={500}
+                onClick={changeState}
               >
                 Back-end
               </Link>
@@ -98,16 +100,17 @@ export const Header = () => {
                 to="sobremim"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={20}
                 duration={500}
+                onClick={changeState}
               >
                 Sobre mim
               </Link>
             </li>
             <hr />
             <div>
-              <img src={Brazil} alt="bandeiraBR" />
-              <img src={EUA} alt="bandeiraEUA" />
+              <img onClick={changeState} src={Brazil} alt="bandeiraBR" />
+              <img onClick={changeState} src={EUA} alt="bandeiraEUA" />
             </div>
           </ul>
         </ModalHeader>

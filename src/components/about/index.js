@@ -6,15 +6,15 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 export const About = () => {
-  const [inViewRef, inView] = useInView({
+  const [inViewRef3, inView3] = useInView({
     threshold: 0.2,
   })
 
-  const animation = useAnimation();
+  const animation4 = useAnimation();
 
   useEffect(() => {
-    if (inView) {
-      animation.start({
+    if (inView3) {
+      animation4.start({
         x: 0,
         transition: {
           type: "spring",
@@ -23,20 +23,20 @@ export const About = () => {
         },
       });
     }
-    if (!inView) {
-      animation.start({ x: "-100vw" });
+    if (!inView3) {
+      animation4.start({ x: "-100vw" });
     }
-  }, [inView]);
+  }, [inView3]);
 
-  const [inViewRef1, inView1] = useInView({
+  const [inViewRef4, inView4] = useInView({
     threshold: 0.2,
   })
 
-  const animation1 = useAnimation();
+  const animation5 = useAnimation();
 
   useEffect(() => {
-    if (inView1) {
-      animation1.start({
+    if (inView4) {
+      animation5.start({
         opacity: 1,
         transition: {
           type: "spring",
@@ -44,17 +44,17 @@ export const About = () => {
         },
       });
     }
-    if (!inView1) {
-      animation1.start({ opacity: 0 });
+    if (!inView4) {
+      animation5.start({ opacity: 0 });
     }
-  }, [inView1]);
+  }, [inView4]);
 
   return (
-    <Container ref={inViewRef1} id="sobremim">
-      <motion.h1 animate={animation1}>Um pouco sobre mim</motion.h1>
+    <Container ref={inViewRef3} id="sobremim">
+      <motion.h1 animate={animation5}>Um pouco sobre mim</motion.h1>
       <div>
-        <motion.img animate={animation1} src={profilePicture} alt="imagemPerfil" />
-        <motion.p animate={animation1}>
+        <motion.img animate={animation5} src={profilePicture} alt="imagemPerfil" />
+        <motion.p animate={animation5}>
           Olá, me chamo Lucas Golle. Sou estudante de Ciência da Computação e
           desenvolvimento web. Esse é meu portfolio, no qual pretendo atualizar
           e melhorar durante toda a minha carreira. Minha paixão pela
@@ -65,13 +65,13 @@ export const About = () => {
         </motion.p>
       </div>
       <section>
-        <motion.h2 animate={animation1}>Perfil</motion.h2>
-        <motion.p animate={animation1}>Apaixonado por tecnologia, games e Harry Potter.</motion.p>
+        <motion.h2 animate={animation5}>Perfil</motion.h2>
+        <motion.p animate={animation5}>Apaixonado por tecnologia, games e Harry Potter.</motion.p>
       </section>
       <section>
-        <motion.h2 animate={animation1}>Casa de Hogwarts</motion.h2>
-        <motion.p ref={inViewRef} animate={animation1}>Lufa-Lufa</motion.p>
-        <motion.img src={Hufflepuff} alt="imagem lufalufa" animate={animation}/>
+        <motion.h2 animate={animation5}>Casa de Hogwarts</motion.h2>
+        <motion.p ref={inViewRef4} animate={animation5}>Lufa-Lufa</motion.p>
+        <motion.img src={Hufflepuff} alt="imagem lufalufa" animate={animation4}/>
       </section>
     </Container>
   );

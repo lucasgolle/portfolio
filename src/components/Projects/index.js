@@ -38,7 +38,7 @@ export const Projects = () => {
       });
     }
     if (!inView) {
-      animation2.start({ x: "-100vw" });
+      animation2.start({ x: "-3000px" });
     }
   }, [inView]);
 
@@ -54,7 +54,7 @@ export const Projects = () => {
       });
     }
     if (!inView2) {
-      animation.start({ x: "1000vw" });
+      animation.start({ x: "-3000px" });
     }
   }, [inView2]);
 
