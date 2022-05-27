@@ -1,5 +1,6 @@
 import { Container } from "./styles";
 import profilePicture from "../../assets/pictureProfile.jpeg";
+import Hufflepuff from "../../assets/Hufflepuff.png"
 
 export const About = () => {
   return (
@@ -20,6 +21,11 @@ export const About = () => {
       <section>
         <h2>Perfil</h2>
         <p>Apaixonado por tecnologia, games e Harry Potter.</p>
+      </section>
+      <section>
+        <h2>Casa de Hogwarts</h2>
+        <p>Lufa-Lufa</p>
+        <img src={Hufflepuff} alt="imagem lufalufa"/>
       </section>
     </Container>
   );

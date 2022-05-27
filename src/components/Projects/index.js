@@ -2,6 +2,7 @@ import {
   Container,
   AnimationContainer,
   AnimationContainerRight,
+  ContainerBack,
 } from "./styles";
 import doIt from "../../assets/YouCut_20220508_052856504_AdobeCreativeCloudExpress.gif";
 import nuKenzie from "../../assets/gifnukenzie.gif";
@@ -37,7 +38,7 @@ export const Projects = () => {
         </AnimationContainerRight>
       </ul>
     </Container>
-    <Container id="back">
+    <ContainerBack id="back">
       <h1>Meus projetos back-end</h1>
       <ul>
         <AnimationContainer>
@@ -57,7 +58,7 @@ export const Projects = () => {
           </li>
         </AnimationContainerRight>
       </ul>
-    </Container>
+    </ContainerBack>
     </>
   );
 };

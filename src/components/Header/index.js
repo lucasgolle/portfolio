@@ -9,19 +9,23 @@ export const Header = () => {
   const [language, setlLanguage] = useState(true);
   const [showModal, setShowModal] = useState(false);
 
-  const changeState = () =>{
-    setShowModal(!showModal)
-  }
+  const changeState = () => {
+    setShowModal(!showModal);
+  };
 
   return (
     <>
       <Container>
         <h1>&lt; Lucas Golle Profile /&gt;</h1>
-        {!showModal ? (<MenuBar onClick={changeState} src={MENU} alt="" />) : (<span onClick={changeState}>X</span>)}
+        {!showModal ? (
+          <MenuBar onClick={changeState} src={MENU} alt="" />
+        ) : (
+          <span onClick={changeState}>X</span>
+        )}
         <nav>
           <ul>
             <div>
-              <li> 
+              <li>
                 <Link
                   to="front"
                   spy={true}
@@ -37,7 +41,7 @@ export const Header = () => {
                   to="back"
                   spy={true}
                   smooth={true}
-                  offset={-85}
+                  offset={-70}
                   duration={500}
                 >
                   Back-end
@@ -48,7 +52,7 @@ export const Header = () => {
                   to="sobremim"
                   spy={true}
                   smooth={true}
-                  offset={50}
+                  offset={-50}
                   duration={500}
                 >
                   Sobre mim
@@ -62,21 +66,53 @@ export const Header = () => {
           <img src={EUA} alt="bandeiraEUA" />
         </div>
       </Container>
-      {showModal && <ModalHeader>
-        <ul>
-        <hr />
-          <li>Front-end</li>
-          <hr />
-          <li>Back-end</li>
-          <hr />
-          <li>Sobre mim</li>
-          <hr />
-          <div>
-          <img src={Brazil} alt="bandeiraBR" />
-          <img src={EUA} alt="bandeiraEUA" />
-          </div>
-        </ul>
-      </ModalHeader>}
+      {showModal && (
+        <ModalHeader>
+          <ul>
+            <hr />
+            <li>
+              <Link
+                to="front"
+                spy={true}
+                smooth={true}
+                offset={-85}
+                duration={500}
+              >
+                Front-end
+              </Link>
+            </li>
+            <hr />
+            <li>
+              <Link
+                to="back"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Back-end
+              </Link>
+            </li>
+            <hr />
+            <li>
+              <Link
+                to="sobremim"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                Sobre mim
+              </Link>
+            </li>
+            <hr />
+            <div>
+              <img src={Brazil} alt="bandeiraBR" />
+              <img src={EUA} alt="bandeiraEUA" />
+            </div>
+          </ul>
+        </ModalHeader>
+      )}
     </>
   );
 };

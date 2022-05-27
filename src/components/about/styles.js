@@ -7,6 +7,7 @@ export const Container = styled.div`
   width: 90vw;
   justify-content: center;
   margin-bottom: 8rem;
+  padding-top: 4rem;
 
   h1 {
     text-align: center;
@@ -45,6 +46,17 @@ export const Container = styled.div`
   div {
     display: flex;
     flex-direction: column;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    img {
+      margin-left: -25px;
+      margin-top: 20px;
+    }
   }
 
   @media (min-width: 1024px) {
