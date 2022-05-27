@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
   width: 100vw;
+  max-width: 100vw;
   display: flex;
   font-size: 1rem;
   font-weight: 500;

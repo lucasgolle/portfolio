@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { keyframes } from "styled-components";
 
 export const Container = styled.header`
   display: flex;
@@ -21,6 +22,18 @@ export const Container = styled.header`
     font-weight: bold;
     color: #ffff;
     display: block;
+  }
+
+  span {
+    display: flex;
+    width: 20px;
+    position: absolute;
+    right: 5%;
+    color: white;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 
   div {
@@ -69,29 +82,53 @@ export const ModalHeader = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 200px;
+  height: 23%;
   margin-top: -17px;
   text-align: center;
   justify-content: center;
   position: fixed;
   z-index: 20;
   font-size: 1rem;
-  background-color: #e8e4b8;
+  color: white;
+  background-color: #1c1c1c;
+  animation: 1s animationCard;
 
+  @keyframes animationElement {
+    0% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes animationCard {
+    0% {
+      height: 0%;
+      opacity: 0.4;
+    }
+    100% {
+      height: 23%;
+      opacity: 1;
+    }
+  }
 
   li {
     padding: 0.8rem;
+    animation: 1s animationElement;
   }
 
   div {
     display: flex;
     justify-content: center;
     padding: 0.8rem;
+    animation: 1s animationElement;
   }
 
   img {
     width: 35px;
     margin-right: 10px;
+    animation: 1s animationElement;
     margin-left: 10px;
   }
 `;

@@ -64,6 +64,7 @@ export const Header = () => {
       </Container>
       {showModal && <ModalHeader>
         <ul>
+        <hr />
           <li>Front-end</li>
           <hr />
           <li>Back-end</li>
