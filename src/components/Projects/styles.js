@@ -43,22 +43,22 @@ export const Container = styled(motion.div)`
   }
 
   p {
-      width: 90vw;
-      max-width: 360px;
-      transition: 1s;
-      font-weight: 400;
-      margin-top: 2rem;
-      -webkit-transform: translate3d(0, -15px, 0);
-      transform: translate3d(0, -15px, 0);
-      -webkit-transition: all 150ms linear;
-      -o-transition: all 150ms linear;
-      transition: all 150ms linear;
-      font-size: 1.0625rem;
-      font-weight: 500;
-      line-height: 1.4;
-      pointer-events: none;
-      margin-bottom: 6rem;
-    }
+    width: 90vw;
+    max-width: 360px;
+    transition: 1s;
+    font-weight: 400;
+    margin-top: 2rem;
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+    -webkit-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    transition: all 150ms linear;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    line-height: 1.4;
+    pointer-events: none;
+    margin-bottom: 6rem;
+  }
 
   li {
     margin: 0 auto;
@@ -94,6 +94,17 @@ export const Container = styled(motion.div)`
         transition: 1s;
         box-shadow: 14px 14px 20px #111111;
       }
+
+      &:hover + p {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    a {
+      text-decoration: none;
 
       &:hover + p {
         opacity: 1;

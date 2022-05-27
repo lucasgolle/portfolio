@@ -64,12 +64,22 @@ export const Projects = () => {
     <>
       <Container ref={inViewRef} id="front">
         <motion.div animate={animation2}>
-          {portuguese ? (<h1>Meus projetos front-end</h1>) : (<h1>My front end projects</h1>)}
+          {portuguese ? (
+            <h1>Meus projetos front-end</h1>
+          ) : (
+            <h1>My front end projects</h1>
+          )}
           <ul>
             <AnimationContainer>
               <h3>Do It</h3>
               <li>
-                <img src={doIt} alt="projeto doIt" />
+                <a
+                  href="https://do-it2.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={doIt} alt="projeto doIt" />
+                </a>
                 {portuguese ? (
                   <p>
                     Projeto desenvolvido para organização de tarefas. Utilizei a
@@ -85,7 +95,13 @@ export const Projects = () => {
               </li>
               <h3>KenzieHub</h3>
               <li>
-                <img src={kenzieHub} alt="projeto doIt" />
+                <a
+                  href="https://react-entrega-s2-kenzie-hub-lucasgolle.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={kenzieHub} alt="projeto doIt" />
+                </a>
                 {portuguese ? (
                   <p>
                     Projeto desenvolvido para criação de portfólio. Utilizei a
@@ -94,9 +110,9 @@ export const Projects = () => {
                   </p>
                 ) : (
                   <p>
-                    Project developed to create a portfolio. I used the
-                    Axios library for API consumption. React Hook Form,
-                    Styled components for styling among other libraries.
+                    Project developed to create a portfolio. I used the Axios
+                    library for API consumption. React Hook Form, Styled
+                    components for styling among other libraries.
                   </p>
                 )}
               </li>
@@ -104,7 +120,13 @@ export const Projects = () => {
             <AnimationContainerRight>
               <h3>NuKenzie</h3>
               <li>
-                <img src={nuKenzie} alt="projeto nuKenzie" />
+                <a
+                  href="https://react-entrega-s1-nu-kenzie-lucasgolle.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={nuKenzie} alt="projeto nuKenzie" />
+                </a>
                 {portuguese ? (
                   <p>
                     Projeto desenvolvido para organização financeira. Entrada e
@@ -114,14 +136,20 @@ export const Projects = () => {
                 ) : (
                   <p>
                     Project developed for financial organization. Profit and
-                    expenses. I used conditional rendering of
-                    React states.
+                    expenses. I used conditional rendering of React states.
                   </p>
                 )}
               </li>
+
               <h3>Hamburgueria</h3>
               <li>
-                <img src={hamburgueria} alt="projeto doIt" />
+                <a
+                  href="https://react-entrega-s1-nu-kenzie-lucasgolle.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={hamburgueria} alt="projeto doIt" />
+                </a>
                 {portuguese ? (
                   <p>
                     Projeto site Hamburgueria. Foi o ínicio dos estudos do React
@@ -130,9 +158,9 @@ export const Projects = () => {
                   </p>
                 ) : (
                   <p>
-                    Hamburger website design. It was the beginning of React studies
-                    and at that time you could already see how powerful this
-                    library.
+                    Hamburger website design. It was the beginning of React
+                    studies and at that time you could already see how powerful
+                    this library.
                   </p>
                 )}
               </li>
@@ -141,7 +169,11 @@ export const Projects = () => {
         </motion.div>
       </Container>
       <ContainerBack ref={inViewRef2} id="back">
-        {portuguese ? (<h1>Meus projetos back-end</h1>) : (<h1>My back end projects</h1>)}
+        {portuguese ? (
+          <h1>Meus projetos back-end</h1>
+        ) : (
+          <h1>My back end projects</h1>
+        )}
         <ul>
           <AnimationContainer>
             <motion.li animate={animation}>
