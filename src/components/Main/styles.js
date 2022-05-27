@@ -15,6 +15,7 @@ export const Container = styled.div`
     width: 320px;
     height: 320px;
     border-radius: 50%;
+    max-width: 100vw;
     margin: 5em auto;
     border: 1px solid #000;
     background: radial-gradient(circle at 50% 25%, black 5%, transparent 5%),
@@ -30,12 +31,14 @@ export const Container = styled.div`
         transparent 100%
       ),
       linear-gradient(to right, white 50%, black 50%);
+      box-shadow: 14px 14px 20px #111111;
     animation: ${animateYang} 1s;
 
 
   @media (min-width: 768px) {
     width: 600px;
     height: 600px;
+    margin-bottom: 10rem;
   }
 `;
 
