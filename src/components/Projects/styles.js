@@ -2,7 +2,6 @@ import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 
 export const Container = styled(motion.div)`
-
   h1 {
     text-align: center;
     font-size: 1.4rem;
@@ -32,6 +31,7 @@ export const Container = styled(motion.div)`
     height: 220px;
     border-radius: 8px;
     box-shadow: 0.5px 0.5px 15px #111111;
+    transition: 1s;
     cursor: pointer;
     border: 1px solid black;
     &:hover {
@@ -42,10 +42,27 @@ export const Container = styled(motion.div)`
     }
   }
 
+  p {
+      width: 90vw;
+      max-width: 360px;
+      transition: 1s;
+      font-weight: 400;
+      margin-top: 2rem;
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+      -webkit-transition: all 150ms linear;
+      -o-transition: all 150ms linear;
+      transition: all 150ms linear;
+      font-size: 1.0625rem;
+      font-weight: 500;
+      line-height: 1.4;
+      pointer-events: none;
+      margin-bottom: 6rem;
+    }
+
   li {
     margin: 0 auto;
     margin-top: 1rem;
-    margin-bottom: 4rem;
   }
 
   @media (min-width: 1024px) {
@@ -66,21 +83,48 @@ export const Container = styled(motion.div)`
     }
 
     img {
-    max-width: 360px;
-    height: 230px;
-    border-radius: 8px;
-    box-shadow: 0.5px 0.5px 15px #111111;
-    cursor: pointer;
-    border: 1px solid black;
-    &:hover {
+      max-width: 360px;
+      height: 230px;
+      border-radius: 8px;
+      box-shadow: 0.5px 0.5px 15px #111111;
+      cursor: pointer;
+      border: 1px solid black;
+      &:hover {
+        max-width: 375px;
+        transition: 1s;
+        box-shadow: 14px 14px 20px #111111;
+      }
+
+      &:hover + p {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    p {
       max-width: 375px;
       transition: 1s;
-      box-shadow: 14px 14px 20px #111111;
+      font-weight: 400;
+      margin-top: 2rem;
+      opacity: 0;
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+      -webkit-transition: all 150ms linear;
+      -o-transition: all 150ms linear;
+      transition: all 150ms linear;
+      font-size: 1.0625rem;
+      font-weight: 500;
+      line-height: 1.4;
+      visibility: hidden;
+      pointer-events: none;
+      margin-bottom: 6rem;
     }
-  }
-  li {
-    margin-bottom: 10rem;
-  }
+
+    li {
+      margin-bottom: 0px;
+    }
   }
 `;
 
@@ -117,6 +161,7 @@ export const ContainerBack = styled.div`
     height: 220px;
     border-radius: 8px;
     box-shadow: 0.5px 0.5px 15px #111111;
+    transition: 1s;
     cursor: pointer;
     border: 1px solid black;
     &:hover {
@@ -151,21 +196,21 @@ export const ContainerBack = styled.div`
     }
 
     img {
-    max-width: 360px;
-    height: 230px;
-    border-radius: 8px;
-    box-shadow: 0.5px 0.5px 15px #111111;
-    cursor: pointer;
-    border: 1px solid black;
-    &:hover {
-      max-width: 375px;
-      transition: 1s;
-      box-shadow: 14px 14px 20px #111111;
+      max-width: 360px;
+      height: 230px;
+      border-radius: 8px;
+      box-shadow: 0.5px 0.5px 15px #111111;
+      cursor: pointer;
+      border: 1px solid black;
+      &:hover {
+        max-width: 375px;
+        transition: 1s;
+        box-shadow: 14px 14px 20px #111111;
+      }
     }
-  }
-  li {
-    margin-bottom: 10rem;
-  }
+    li {
+      margin-bottom: 10rem;
+    }
   }
 `;
 
@@ -199,7 +244,7 @@ export const AnimationContainer = styled.div`
   display: flex;
   flex-direction: column;
   animation: ${appearFromLeft} 1s;
-  @media (min-width: 1024px){
+  @media (min-width: 1024px) {
     margin-right: 100px;
   }
 `;

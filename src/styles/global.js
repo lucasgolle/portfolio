@@ -12,6 +12,7 @@ export default createGlobalStyle`
         background-color: #F8F8F8;
         width: 100vw;
         max-width: 100vw;
+        overflow-y: none;
     }
 
     body, input, button{

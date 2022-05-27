@@ -1,14 +1,17 @@
 import { Container } from "./styles";
 import profilePicture from "../../assets/pictureProfile.jpeg";
-import Hufflepuff from "../../assets/Hufflepuff.png"
+import Hufflepuff from "../../assets/Hufflepuff.png";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { useLanguege } from "../../Providers/language";
 
 export const About = () => {
+  const { portuguese } = useLanguege();
+
   const [inViewRef3, inView3] = useInView({
     threshold: 0.2,
-  })
+  });
 
   const animation4 = useAnimation();
 
@@ -30,7 +33,7 @@ export const About = () => {
 
   const [inViewRef4, inView4] = useInView({
     threshold: 0.2,
-  })
+  });
 
   const animation5 = useAnimation();
 
@@ -51,27 +54,74 @@ export const About = () => {
 
   return (
     <Container ref={inViewRef3} id="sobremim">
-      <motion.h1 animate={animation5}>Um pouco sobre mim</motion.h1>
+      {portuguese ? (
+        <motion.h1 animate={animation5}>Um pouco sobre mim</motion.h1>
+      ) : (
+        <motion.h1 animate={animation5}>A little about myself</motion.h1>
+      )}
       <div>
-        <motion.img animate={animation5} src={profilePicture} alt="imagemPerfil" />
-        <motion.p animate={animation5}>
-          Olá, me chamo Lucas Golle. Sou estudante de Ciência da Computação e
-          desenvolvimento web. Esse é meu portfolio, no qual pretendo atualizar
-          e melhorar durante toda a minha carreira. Minha paixão pela
-          programação vem desde de muito novo. Sempre trabalhei em áreas
-          técnicas de empresas de comunicação (televisão e rádio) operando
-          softwares. Minha meta agora além de operar e entender, é estar do
-          outro lado, desenvolvendo essas ferramentas fantásticas.
-        </motion.p>
+        <motion.img
+          animate={animation5}
+          src={profilePicture}
+          alt="imagemPerfil"
+        />
+        {portuguese ? (
+          <motion.p animate={animation5}>
+            Olá, me chamo Lucas Golle. Sou estudante de Ciência da Computação e
+            desenvolvimento web. Esse é meu portfolio, no qual pretendo
+            atualizar e melhorar durante toda a minha carreira. Minha paixão
+            pela programação vem desde de muito novo. Sempre trabalhei em áreas
+            técnicas de empresas de comunicação (televisão e rádio) operando
+            softwares. Minha meta agora além de operar e entender, é estar do
+            outro lado, desenvolvendo essas ferramentas fantásticas.
+          </motion.p>
+        ) : (
+          <motion.p animate={animation5}>
+            Hi, my name is Lucas Golle. I'm a student of computer science and
+            web development. This is my portfolio, which I intend to update and
+            improve throughout my career. My passion for programming since I was
+            very young. I have always worked in technical areas of communication
+            companies (television and radio) operating software. My goal is to
+            be on the other side, building these fantastic tools.
+          </motion.p>
+        )}
       </div>
       <section>
-        <motion.h2 animate={animation5}>Perfil</motion.h2>
-        <motion.p animate={animation5}>Apaixonado por tecnologia, games e Harry Potter.</motion.p>
+        {portuguese ? (
+          <motion.h2 animate={animation5}>Perfil</motion.h2>
+        ) : (
+          <motion.h2 animate={animation5}>Profile</motion.h2>
+        )}
+        {portuguese ? (
+          <motion.p animate={animation5}>
+            Apaixonado por tecnologia, games e Harry Potter.
+          </motion.p>
+        ) : (
+          <motion.p animate={animation5}>
+            Passionate about technology, games and Harry Potter.
+          </motion.p>
+        )}
       </section>
       <section>
-        <motion.h2 animate={animation5}>Casa de Hogwarts</motion.h2>
-        <motion.p ref={inViewRef4} animate={animation5}>Lufa-Lufa</motion.p>
-        <motion.img src={Hufflepuff} alt="imagem lufalufa" animate={animation4}/>
+        {portuguese ? (
+          <motion.h2 animate={animation5}>Casa de Hogwarts</motion.h2>
+        ) : (
+          <motion.h2 animate={animation5}>Hogwarts House</motion.h2>
+        )}
+        {portuguese ? (
+          <motion.p ref={inViewRef4} animate={animation5}>
+            Lufa-Lufa
+          </motion.p>
+        ) : (
+          <motion.p ref={inViewRef4} animate={animation5}>
+            Hufflepuff
+          </motion.p>
+        )}
+        <motion.img
+          src={Hufflepuff}
+          alt="imagem lufalufa"
+          animate={animation4}
+        />
       </section>
     </Container>
   );

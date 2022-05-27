@@ -21,6 +21,11 @@ export const Container = styled.footer`
     margin-bottom: 0.4rem;
   }
 
+  a {
+    text-decoration: none;
+    color: #e8e4b8;
+  }
+
   h2 {
     font-size: 0.6rem;
   }

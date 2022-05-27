@@ -4,6 +4,7 @@ import EUA from "../../assets/united-states-of-america-svgrepo-com.svg";
 import { useState } from "react";
 import { Link } from "react-scroll/modules";
 import MENU from "../../assets/menu(1).svg";
+import { useLanguege } from "../../Providers/language";
 
 export const Header = () => {
   const [showModal, setShowModal] = useState(false);
@@ -11,6 +12,8 @@ export const Header = () => {
   const changeState = () => {
     setShowModal(!showModal);
   };
+
+  const { portuguese, changePortuguese, changetoEnglish } = useLanguege();
 
   return (
     <>
@@ -47,22 +50,34 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="sobremim"
-                  spy={true}
-                  smooth={true}
-                  offset={-50}
-                  duration={500}
-                >
-                  Sobre mim
-                </Link>
+                {portuguese ? (
+                  <Link
+                    to="sobremim"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                  >
+                    Sobre mim
+                  </Link>
+                ) : (
+                  <Link
+                    to="sobremim"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                  >
+                    About me
+                  </Link>
+                )}
               </li>
             </div>
           </ul>
         </nav>
         <div>
-          <img src={Brazil} alt="bandeiraBR" />
-          <img src={EUA} alt="bandeiraEUA" />
+          <img onClick={changePortuguese} src={Brazil} alt="bandeiraBR" />
+          <img onClick={changetoEnglish} src={EUA} alt="bandeiraEUA" />
         </div>
       </Container>
       {showModal && (
@@ -96,21 +111,48 @@ export const Header = () => {
             </li>
             <hr />
             <li>
-              <Link
-                to="sobremim"
-                spy={true}
-                smooth={true}
-                offset={20}
-                duration={500}
-                onClick={changeState}
-              >
-                Sobre mim
-              </Link>
+              {portuguese ? (
+                <Link
+                  to="sobremim"
+                  spy={true}
+                  smooth={true}
+                  offset={20}
+                  duration={500}
+                  onClick={changeState}
+                >
+                  Sobre mim
+                </Link>
+              ) : (
+                <Link
+                  to="sobremim"
+                  spy={true}
+                  smooth={true}
+                  offset={20}
+                  duration={500}
+                  onClick={changeState}
+                >
+                  About me
+                </Link>
+              )}
             </li>
             <hr />
             <div>
-              <img onClick={changeState} src={Brazil} alt="bandeiraBR" />
-              <img onClick={changeState} src={EUA} alt="bandeiraEUA" />
+              <img
+                onClick={() => {
+                  changePortuguese();
+                  changeState();
+                }}
+                src={Brazil}
+                alt="bandeiraBR"
+              />
+              <img
+                onClick={() => {
+                  changetoEnglish();
+                  changeState();
+                }}
+                src={EUA}
+                alt="bandeiraEUA"
+              />
             </div>
           </ul>
         </ModalHeader>
