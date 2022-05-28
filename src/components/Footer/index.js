@@ -9,7 +9,7 @@ export const Footer = () => {
 
   return (
     <>
-      <Container>
+      <Container id="contact">
         <div>
           {portuguese ? (<h1>Contato</h1>) : (<h1>Contact</h1>)}
           <h2>lucas_rodrigues1@yahoo.com.br</h2>

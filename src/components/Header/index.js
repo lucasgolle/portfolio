@@ -72,6 +72,29 @@ export const Header = () => {
                   </Link>
                 )}
               </li>
+              <li>
+              {portuguese ? (
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                  >
+                    Contato
+                  </Link>
+                ) : (
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                  >
+                    Contact
+                  </Link>
+                )}
+              </li>
             </div>
           </ul>
         </nav>
@@ -132,6 +155,32 @@ export const Header = () => {
                   onClick={changeState}
                 >
                   About me
+                </Link>
+              )}
+            </li>
+            <hr />
+            <li>
+              {portuguese ? (
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={20}
+                  duration={500}
+                  onClick={changeState}
+                >
+                  Contato
+                </Link>
+              ) : (
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={20}
+                  duration={500}
+                  onClick={changeState}
+                >
+                  Contact
                 </Link>
               )}
             </li>
