@@ -90,7 +90,7 @@ export const ModalHeader = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 230px;
+  height: 245px;
   margin-top: -17px;
   text-align: center;
   justify-content: center;
@@ -117,7 +117,7 @@ export const ModalHeader = styled.div`
       opacity: 0.4;
     }
     100% {
-      height: 230px;
+      height: 245px;
       opacity: 1;
     }
   }

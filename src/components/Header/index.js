@@ -32,7 +32,7 @@ export const Header = () => {
                   to="front"
                   spy={true}
                   smooth={true}
-                  offset={-85}
+                  offset={-65}
                   duration={500}
                 >
                   Front-end
@@ -112,7 +112,7 @@ export const Header = () => {
                 to="front"
                 spy={true}
                 smooth={true}
-                offset={-85}
+                offset={-25}
                 duration={500}
                 onClick={changeState}
               >
