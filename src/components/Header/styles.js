@@ -100,6 +100,7 @@ export const ModalHeader = styled.div`
   color: white;
   background-color: #1c1c1c;
   animation: 1s animationCard;
+  overflow: hidden;
 
   @keyframes animationElement {
     0% {
