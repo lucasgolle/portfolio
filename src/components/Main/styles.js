@@ -1,15 +1,15 @@
 import styled, { keyframes } from "styled-components";
 
-// const animateYang =
-//     from{
-//         transform:rotate(0deg);
-//     }
+const animateYang = keyframes`
+    from{
+        transform:rotate(0deg);
+    }
 
-//     to{
-//         transform:rotate(360deg);
-//     }
+    to{
+        transform:rotate(360deg);
+    }
 
-// `;
+`;
 
 const animateYing = keyframes`
     0%{
@@ -43,7 +43,7 @@ export const Container = styled.div`
     ),
     linear-gradient(to right, white 50%, black 50%);
   box-shadow: 14px 14px 20px #111111;
-  animation: ${animateYing} 1.8s infinite alternate;
+  animation: ${animateYang} 1s, ${animateYing} 1.8s infinite alternate;
   margin-bottom: 20rem;
 
   @media (min-width: 768px) {
