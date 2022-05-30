@@ -81,6 +81,29 @@ export const Header = () => {
                     offset={-50}
                     duration={500}
                   >
+                    O projeto
+                  </Link>
+                ) : (
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                  >
+                    The project
+                  </Link>
+                )}
+              </li>
+              <li>
+              {portuguese ? (
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                  >
                     Contato
                   </Link>
                 ) : (
