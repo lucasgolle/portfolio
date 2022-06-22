@@ -43,7 +43,7 @@ export const Container = styled.div`
     ),
     linear-gradient(to right, white 50%, black 50%);
   box-shadow: 14px 14px 20px #111111;
-  animation: ${animateYang} 1s;
+  animation: ${animateYing} 1.8s infinite alternate;
   margin-bottom: 20rem;
 
   @media (min-width: 768px) {

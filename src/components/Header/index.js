@@ -58,7 +58,7 @@ export const Header = () => {
                     offset={-200}
                     duration={500}
                   >
-                    Minhas habilidades
+                    Tecnologias
                   </Link>
                 ) : (
                   <Link
@@ -73,7 +73,7 @@ export const Header = () => {
                 )}
               </li>
               <li>
-              {portuguese ? (
+                {portuguese ? (
                   <Link
                     to="contact"
                     spy={true}
@@ -106,19 +106,6 @@ export const Header = () => {
       {showModal && (
         <ModalHeader>
           <ul>
-            <hr />
-            <li>
-              <Link
-                to="front"
-                spy={true}
-                smooth={true}
-                offset={-25}
-                duration={500}
-                onClick={changeState}
-              >
-                Front-end
-              </Link>
-            </li>
             <li>
               <Link
                 to="back"
@@ -132,6 +119,18 @@ export const Header = () => {
               </Link>
             </li>
             <hr />
+            <li>
+              <Link
+                to="front"
+                spy={true}
+                smooth={true}
+                offset={-25}
+                duration={500}
+                onClick={changeState}
+              >
+                Front-end
+              </Link>
+            </li>
             <hr />
             <li>
               {portuguese ? (
@@ -139,18 +138,18 @@ export const Header = () => {
                   to="skiils"
                   spy={true}
                   smooth={true}
-                  offset={20}
+                  offset={-280}
                   duration={500}
                   onClick={changeState}
                 >
-                  Minhas Habilidades
+                  Tecnologias
                 </Link>
               ) : (
                 <Link
                   to="skiils"
                   spy={true}
                   smooth={true}
-                  offset={20}
+                  offset={-160}
                   duration={500}
                   onClick={changeState}
                 >
