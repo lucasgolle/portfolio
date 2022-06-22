@@ -1,15 +1,15 @@
 import styled, { keyframes } from "styled-components";
 
-// const animateYang =
-//     from{
-//         transform:rotate(0deg);
-//     }
+const animateYang = keyframes`
+    from{
+        transform:rotate(0deg);
+    }
 
-//     to{
-//         transform:rotate(360deg);
-//     }
+    to{
+        transform:rotate(360deg);
+    }
 
-// `;
+`;
 
 const animateYing = keyframes`
     0%{
@@ -17,7 +17,7 @@ const animateYing = keyframes`
     }
 
     100%{
-      transform: translateY(25px);
+      transform: translateY(35px);
     }
 
 `;

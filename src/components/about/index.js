@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import { Container, PictureProfiles } from "./styles";
 import profilePicture from "../../assets/pictureProfile.jpeg";
 import Hufflepuff from "../../assets/Hufflepuff.png";
 import { motion, useAnimation } from "framer-motion";
@@ -21,7 +21,7 @@ export const About = () => {
         x: 0,
         transition: {
           type: "spring",
-          duration: 1.5,
+          duration: 6,
           bounce: 0.6,
         },
       });
@@ -60,7 +60,7 @@ export const About = () => {
         <motion.h1 animate={animation5}>A little about myself</motion.h1>
       )}
       <div>
-        <motion.img
+        <PictureProfiles
           animate={animation5}
           src={profilePicture}
           alt="imagemPerfil"

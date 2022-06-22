@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const animateYing = keyframes`
+    0%{
+      transform: translateY(0);
+    }
+
+    100%{
+      transform: translateY(20px);
+    }
+
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -7,7 +18,7 @@ export const Container = styled.div`
   width: 90vw;
   justify-content: center;
   margin-bottom: 8rem;
-  padding-top: 4rem;
+  padding-top: 8rem;
 
   h1 {
     text-align: center;
@@ -60,7 +71,6 @@ export const Container = styled.div`
   }
 
   @media (min-width: 1024px) {
-
     width: 60vw;
     h1 {
       font-size: 2.4rem;
@@ -73,11 +83,11 @@ export const Container = styled.div`
     }
 
     h2 {
-        margin-bottom: 1rem;
+      margin-bottom: 1rem;
     }
 
     p {
-    font-size: 20px;
+      font-size: 20px;
     }
 
     div {
@@ -85,5 +95,21 @@ export const Container = styled.div`
       flex-direction: row;
       align-items: center;
     }
+  }
+`;
+
+export const PictureProfiles = styled.img`
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: block;
+  animation: ${animateYing} 1.8s infinite alternate;
+
+  @media (min-width: 1024px) {
+    width: 220px;
+    height: 220px;
+    margin-right: 2rem;
   }
 `;

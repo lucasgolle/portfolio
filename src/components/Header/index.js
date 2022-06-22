@@ -29,17 +29,6 @@ export const Header = () => {
             <div>
               <li>
                 <Link
-                  to="front"
-                  spy={true}
-                  smooth={true}
-                  offset={-65}
-                  duration={500}
-                >
-                  Front-end
-                </Link>
-              </li>
-              <li>
-                <Link
                   to="back"
                   spy={true}
                   smooth={true}
@@ -50,30 +39,41 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
+                <Link
+                  to="front"
+                  spy={true}
+                  smooth={true}
+                  offset={-65}
+                  duration={500}
+                >
+                  Front-end
+                </Link>
+              </li>
+              <li>
                 {portuguese ? (
                   <Link
-                    to="sobremim"
+                    to="skiils"
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-200}
                     duration={500}
                   >
-                    Sobre mim
+                    Minhas habilidades
                   </Link>
                 ) : (
                   <Link
-                    to="sobremim"
+                    to="skiils"
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-200}
                     duration={500}
                   >
-                    About me
+                    My skiils
                   </Link>
                 )}
               </li>
               <li>
-              {portuguese ? (
+                {portuguese ? (
                   <Link
                     to="contact"
                     spy={true}
@@ -136,25 +136,25 @@ export const Header = () => {
             <li>
               {portuguese ? (
                 <Link
-                  to="sobremim"
+                  to="skiils"
                   spy={true}
                   smooth={true}
                   offset={20}
                   duration={500}
                   onClick={changeState}
                 >
-                  Sobre mim
+                  Minhas Habilidades
                 </Link>
               ) : (
                 <Link
-                  to="sobremim"
+                  to="skiils"
                   spy={true}
                   smooth={true}
                   offset={20}
                   duration={500}
                   onClick={changeState}
                 >
-                  About me
+                  My skiils
                 </Link>
               )}
             </li>

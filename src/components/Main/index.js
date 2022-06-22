@@ -9,7 +9,7 @@ import API from "../../assets/api.png"
 export const Main = () => {
   return (
     <>
-      <Container>
+      <Container id="skiils">
         <TitulosHabilidades>
           <h3>Front-End</h3>
           <Back>Back-End</Back>

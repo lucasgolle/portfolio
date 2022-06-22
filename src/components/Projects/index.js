@@ -62,6 +62,31 @@ export const Projects = () => {
 
   return (
     <>
+        <ContainerBack ref={inViewRef2} id="back">
+          {portuguese ? (
+            <h1>Meus projetos back-end</h1>
+          ) : (
+            <h1>My back end projects</h1>
+          )}
+          <ul>
+            <AnimationContainer>
+              <motion.li animate={animation}>
+                <img src={backProject} alt="projeto doIt" />
+              </motion.li>
+              <motion.li animate={animation}>
+                <img src={backProject} alt="projeto doIt" />
+              </motion.li>
+            </AnimationContainer>
+            <AnimationContainerRight>
+              <motion.li animate={animation}>
+                <img src={backProject} alt="projeto nuKenzie" />
+              </motion.li>
+              <motion.li animate={animation}>
+                <img src={backProject} alt="projeto doIt" />
+              </motion.li>
+            </AnimationContainerRight>
+          </ul>
+        </ContainerBack>
       <Container ref={inViewRef} id="front">
         <motion.div animate={animation2}>
           {portuguese ? (
@@ -168,31 +193,6 @@ export const Projects = () => {
           </ul>
         </motion.div>
       </Container>
-      <ContainerBack ref={inViewRef2} id="back">
-        {portuguese ? (
-          <h1>Meus projetos back-end</h1>
-        ) : (
-          <h1>My back end projects</h1>
-        )}
-        <ul>
-          <AnimationContainer>
-            <motion.li animate={animation}>
-              <img src={backProject} alt="projeto doIt" />
-            </motion.li>
-            <motion.li animate={animation}>
-              <img src={backProject} alt="projeto doIt" />
-            </motion.li>
-          </AnimationContainer>
-          <AnimationContainerRight>
-            <motion.li animate={animation}>
-              <img src={backProject} alt="projeto nuKenzie" />
-            </motion.li>
-            <motion.li animate={animation}>
-              <img src={backProject} alt="projeto doIt" />
-            </motion.li>
-          </AnimationContainerRight>
-        </ul>
-      </ContainerBack>
     </>
   );
 };
