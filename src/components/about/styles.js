@@ -23,7 +23,7 @@ export const Container = styled.div`
   h1 {
     text-align: center;
     font-size: 1.4rem;
-    margin-top: -2rem;
+    margin-top: -3.5rem;
     margin-bottom: 4rem;
   }
 
