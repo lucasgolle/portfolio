@@ -23,7 +23,7 @@ export const Container = styled.div`
   h1 {
     text-align: center;
     font-size: 1.4rem;
-    margin-top: 1rem;
+    margin-top: -2rem;
     margin-bottom: 4rem;
   }
 
@@ -44,7 +44,7 @@ export const Container = styled.div`
     height: 120px;
     border-radius: 100%;
     margin: 0 auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     display: block;
   }
 
@@ -74,6 +74,7 @@ export const Container = styled.div`
     width: 60vw;
     h1 {
       font-size: 2.4rem;
+      margin-top: 1rem;
     }
 
     img {
