@@ -18,7 +18,15 @@ export const Header = () => {
   return (
     <>
       <Container>
-        <h1>&lt; Lucas Golle Profile /&gt;</h1>
+      <Link
+                  to="sobremim"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                 <h1>&lt; Lucas Golle Profile /&gt;</h1>
+                </Link>    
         {!showModal ? (
           <MenuBar onClick={changeState} src={MENU} alt="" />
         ) : (

@@ -83,6 +83,28 @@ export const Container = styled(motion.div)`
       text-align: start;
     }
 
+    p {
+      max-width: 375px;
+      transition: 1s;
+      font-weight: 400;
+      margin-top: 2rem;
+      opacity: 0;
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+      -webkit-transition: all 150ms linear;
+      -o-transition: all 150ms linear;
+      transition: all 150ms linear;
+      font-size: 1.0625rem;
+      font-weight: 500;
+      line-height: 1.4;
+      visibility: hidden;
+      pointer-events: none;
+      margin-bottom: 6rem;
+
+      a {
+        text-decoration: none;
+      }
+    }
     img {
       max-width: 360px;
       height: 230px;
@@ -113,25 +135,6 @@ export const Container = styled(motion.div)`
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
       }
-    }
-
-    p {
-      max-width: 375px;
-      transition: 1s;
-      font-weight: 400;
-      margin-top: 2rem;
-      opacity: 0;
-      -webkit-transform: translate3d(0, -15px, 0);
-      transform: translate3d(0, -15px, 0);
-      -webkit-transition: all 150ms linear;
-      -o-transition: all 150ms linear;
-      transition: all 150ms linear;
-      font-size: 1.0625rem;
-      font-weight: 500;
-      line-height: 1.4;
-      visibility: hidden;
-      pointer-events: none;
-      margin-bottom: 6rem;
     }
 
     li {
@@ -256,6 +259,24 @@ export const AnimationContainer = styled.div`
   display: flex;
   flex-direction: column;
   animation: ${appearFromLeft} 1s;
+
+  a {
+    color: inherit;
+    outline: 0;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  svg {
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+    transition: 1s;
+  }
   @media (min-width: 1024px) {
     margin-right: 100px;
   }
@@ -265,4 +286,19 @@ export const AnimationContainerRight = styled.div`
   display: flex;
   flex-direction: column;
   animation: ${appearFromRigth} 1s;
+  a {
+    color: inherit;
+    outline: 0;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  svg {
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+    transition: 1s;
+  }
 `;

@@ -22,6 +22,7 @@ export const Container = styled.header`
     font-weight: bold;
     color: #ffff;
     display: block;
+    cursor: pointer;
   }
 
   span {
