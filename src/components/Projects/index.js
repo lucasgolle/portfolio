@@ -72,18 +72,76 @@ export const Projects = () => {
         <ul>
           <AnimationContainer>
             <motion.li animate={animation}>
-              <img src={backProject} alt="projeto doIt" />
+              <h3>Solid Control</h3>
+              <RiGithubFill src={RiGithubFill} alt="link github Do It" />
+              {portuguese ? (
+                <p>
+                  Projeto de conclusão do módulo de beckend desenvolvido na
+                  Kenzie academy Brasil. Sistema de gerenciamento de estoque,
+                  utilizando NodeJS, Postgres entre outras tecnologias.
+                </p>
+              ) : (
+                <p>
+                  Project to complete the beckend module developed at Kenzie
+                  academy Brasil. Inventory management system, using NodeJS,
+                  Postgres and other technologies.
+                </p>
+              )}
             </motion.li>
             <motion.li animate={animation}>
-              <img src={backProject} alt="projeto doIt" />
+              <h3>SQLanches</h3>
+              <RiGithubFill src={RiGithubFill} alt="link github Do It" />
+              {portuguese ? (
+                <p>
+                  Aprendendo a usar e manipular banco de dados em backend nessa
+                  entrega com tabelas relacionadas utilizando SQL. CRUD também
+                  foi feito e os dados são criados e editados salvando no banco
+                  de dados.
+                </p>
+              ) : (
+                <p>
+                  Learning to use and manipulate database in backend in this
+                  project using SQL. CRUD was done and the data is created and
+                  edited by saving in the database. Use Node Express SQL.
+                </p>
+              )}
             </motion.li>
           </AnimationContainer>
           <AnimationContainerRight>
             <motion.li animate={animation}>
-              <img src={backProject} alt="projeto nuKenzie" />
+              <h3>CRUD Express</h3>
+              <RiGithubFill src={RiGithubFill} alt="link github Do It" />
+              {portuguese ? (
+                <p>
+                  Create, Read, Update, Delete. Todo desenvolvedor backend deve
+                  saber construir uma aplicação com essas 4 funcionalidades.
+                  Nesse projeto desenvolvo esse conceito.
+                </p>
+              ) : (
+                <p>
+                  Project developed for task organization. I used the Axios
+                  library for API consumption. styled components for styling.
+                </p>
+              )}
             </motion.li>
             <motion.li animate={animation}>
-              <img src={backProject} alt="projeto doIt" />
+              <h3>Comandos SQL</h3>
+              <RiGithubFill src={RiGithubFill} alt="link github Do It" />
+              {portuguese ? (
+                <p>
+                  Além de saber fazer CRUD, um desenvolvedor tem que
+                  saber manipular banco de dados. Pretendo salvar os
+                  principais comandos de pesquisa e manipulação de banco de
+                  dados ao longo da minha carreira. 
+                </p>
+              ) : (
+                <p>
+                  In addition to knowing how to do CRUD, a beckend developer has
+                  to know how to query, manipulate database. The purpose of this
+                  repository is to save the main search commands and database
+                  manipulation. That I intend to update throughout my career.
+                </p>
+              )}
             </motion.li>
           </AnimationContainerRight>
         </ul>
@@ -135,7 +193,10 @@ export const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <RiGithubFill src={RiGithubFill} alt="link github KenzieHub" />
+                  <RiGithubFill
+                    src={RiGithubFill}
+                    alt="link github KenzieHub"
+                  />
                 </a>
               </div>
               <li>
@@ -200,7 +261,10 @@ export const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <RiGithubFill src={RiGithubFill} alt="link github Hamburgueria" />
+                  <RiGithubFill
+                    src={RiGithubFill}
+                    alt="link github Hamburgueria"
+                  />
                 </a>
               </div>
               <li>
