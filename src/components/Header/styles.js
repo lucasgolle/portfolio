@@ -55,6 +55,7 @@ export const Container = styled.header`
       &:hover {
         transition: 0.5s;
         box-shadow: 0.5px 0.5px 15px white;
+        transform: scale(1.1);
         border-radius: 100%;
       }
     }
