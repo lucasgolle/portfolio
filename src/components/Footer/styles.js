@@ -63,7 +63,7 @@ export const Container = styled.footer`
       transition: 1s;
 
       &:hover {
-        width: 50px;
+        transform: scale(1.2);
         transition: 1s;
       }
     }
