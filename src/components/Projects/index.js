@@ -73,7 +73,13 @@ export const Projects = () => {
           <AnimationContainer>
             <motion.li animate={animation}>
               <h3>Solid Control</h3>
-              <RiGithubFill src={RiGithubFill} alt="link github Do It" />
+              <a
+                href="https://github.com/lucasgolle/solid-control-api"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <RiGithubFill src={RiGithubFill} alt="link github Solid Control" />
+              </a>
               {portuguese ? (
                 <p>
                   Projeto de conclusão do módulo de beckend desenvolvido na
@@ -90,7 +96,13 @@ export const Projects = () => {
             </motion.li>
             <motion.li animate={animation}>
               <h3>SQLanches</h3>
-              <RiGithubFill src={RiGithubFill} alt="link github Do It" />
+              <a
+                href="https://github.com/Kenzie-Academy-Brasil-Developers/m4_entrega_sqlanches-lucasgolle"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <RiGithubFill src={RiGithubFill} alt="link github SQLanches" />
+              </a>
               {portuguese ? (
                 <p>
                   Aprendendo a usar e manipular banco de dados em backend nessa
@@ -110,7 +122,13 @@ export const Projects = () => {
           <AnimationContainerRight>
             <motion.li animate={animation}>
               <h3>CRUD Express</h3>
-              <RiGithubFill src={RiGithubFill} alt="link github Do It" />
+              <a
+                href="https://github.com/Kenzie-Academy-Brasil-Developers/sprint5-entrega-lucasgolle"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <RiGithubFill src={RiGithubFill} alt="link github CRUD Express" />
+              </a>
               {portuguese ? (
                 <p>
                   Create, Read, Update, Delete. Todo desenvolvedor backend deve
@@ -126,13 +144,19 @@ export const Projects = () => {
             </motion.li>
             <motion.li animate={animation}>
               <h3>Comandos SQL</h3>
-              <RiGithubFill src={RiGithubFill} alt="link github Do It" />
+              <a
+                href="https://github.com/Kenzie-Academy-Brasil-Developers/sql_obtendo_produtos-lucasgolle"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <RiGithubFill src={RiGithubFill} alt="link github Comandos SQL" />
+              </a>
               {portuguese ? (
                 <p>
-                  Além de saber fazer CRUD, um desenvolvedor tem que
-                  saber manipular banco de dados. Pretendo salvar os
-                  principais comandos de pesquisa e manipulação de banco de
-                  dados ao longo da minha carreira. 
+                  Além de saber fazer CRUD, um desenvolvedor tem que saber
+                  manipular banco de dados. Pretendo salvar os principais
+                  comandos de pesquisa e manipulação de banco de dados ao longo
+                  da minha carreira.
                 </p>
               ) : (
                 <p>

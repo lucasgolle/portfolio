@@ -310,8 +310,18 @@ export const ContainerBack = styled.div`
         transform: translate3d(0, 0, 0);
       }
     }
-  }
-`;
+
+    a {
+      text-decoration: none;
+
+      &:hover + p {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+  }}
+`
 
 const appearFromLeft = keyframes`
     from{
